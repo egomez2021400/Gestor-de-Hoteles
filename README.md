@@ -1,12 +1,8 @@
 🏨 Gestor de Hoteles - Sistema de Gestión de Reservas y Facturación
 
-Gestor de Hoteles es una plataforma integral desarrollada para la gestión eficiente de reservas y facturación en hoteles. Permite a los usuarios reservar habitaciones y eventos, y buscar hoteles según sus preferencias y precios. Además, los usuarios pueden calificar hoteles y ver la disponibilidad de habitaciones y servicios ofrecidos.
+Gestor de Hoteles es una plataforma integral desarrollada para la gestión eficiente de reservas. Permite a los usuarios reservar habitaciones y eventos, y buscar hoteles según sus preferencias y precios. Además, los usuarios pueden calificar hoteles y ver la disponibilidad de habitaciones y servicios ofrecidos.
 
 🚀 Funcionalidades Principales
-
-Gestión de Facturación:
-Creación de facturas para reservas y servicios.
-Reservas:
 
 Reserva de habitaciones y eventos dentro del hotel.
 Búsqueda de hoteles por preferencia y precio.
