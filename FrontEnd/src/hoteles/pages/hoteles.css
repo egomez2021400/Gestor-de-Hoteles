@@ -1,0 +1,10 @@
+.hotels-container{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 230px);
+    place-content: center;
+    gap: 30px;
+    position: relative;
+    padding-left: 8px;
+    padding-right: 8px;
+}

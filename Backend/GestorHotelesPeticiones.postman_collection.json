@@ -1,0 +1,1261 @@
+{
+	"info": {
+		"_postman_id": "fcbca294-931f-4d61-83cf-25ef9ffa3cee",
+		"name": "GestorHotelesPeticiones",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Usuarios",
+			"item": [
+				{
+					"name": "Crear usuario 1",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Usuario 1",
+									"type": "default"
+								},
+								{
+									"key": "email",
+									"value": "usuario1@",
+									"type": "default"
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "default"
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "default",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/api/create-user",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"create-user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear usuario 2",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "User 2",
+									"type": "default"
+								},
+								{
+									"key": "email",
+									"value": "usuario2@",
+									"type": "default"
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/api/create-user",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"create-user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Probar login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "usuario1@",
+									"type": "default"
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/api/login",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Hoteles",
+			"item": [
+				{
+					"name": "Crear hotel 1",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Hotel 2",
+									"type": "default"
+								},
+								{
+									"key": "description",
+									"value": "Segundo hotel creado",
+									"type": "default"
+								},
+								{
+									"key": "address",
+									"value": "Zona 10 Guatemala, Guatemala",
+									"type": "default"
+								},
+								{
+									"key": "admin",
+									"value": "645346544f2752ef65500748",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/api/create-hotel",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"create-hotel"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear hotel 2",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Hotel 3",
+									"type": "default"
+								},
+								{
+									"key": "description",
+									"value": "Tercer hotel creado",
+									"type": "default"
+								},
+								{
+									"key": "address",
+									"value": "Zona 9, Guatemala, Guatemala",
+									"type": "default"
+								},
+								{
+									"key": "admin",
+									"value": "64533ab00684bca44c1ede36",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/api/create-hotel",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"create-hotel"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear hotel 3",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Hotel 2",
+									"type": "default"
+								},
+								{
+									"key": "description",
+									"value": "Segundo hotel creado",
+									"type": "default"
+								},
+								{
+									"key": "address",
+									"value": "Zona 10, Guatemala, Guatemala",
+									"type": "default"
+								},
+								{
+									"key": "admin",
+									"value": "645346544f2752ef65500748",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/api/create-hotel",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"create-hotel"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Ver todos los hoteles",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/read-hotels",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"read-hotels"
+							]
+						},
+						"description": "Ver todos los hoteles"
+					},
+					"response": []
+				},
+				{
+					"name": "Editar hotel 1",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "description",
+									"value": "Primer hotel Editado",
+									"type": "default"
+								},
+								{
+									"key": "name",
+									"value": "Hotel 1",
+									"type": "default"
+								},
+								{
+									"key": "admin",
+									"value": "64533dd80684bca44c1ede3a",
+									"type": "default"
+								},
+								{
+									"key": "address",
+									"value": "Zona 13, Guatemala, Guatemala",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/api/edit-hotel/645340460684bca44c1ede45",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"edit-hotel",
+								"645340460684bca44c1ede45"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar hotel 2",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/delete-hotel/645347574f2752ef65500751",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"delete-hotel",
+								"645347574f2752ef65500751"
+							]
+						},
+						"description": "Eliminacin del hotel 2"
+					},
+					"response": []
+				}
+			],
+			"description": "Buscar los ID de los usuarios admin, no seran los mismos al volver a ejectuar las peticiones."
+		},
+		{
+			"name": "Habitaciones",
+			"item": [
+				{
+					"name": "Crear habitacion 1 para el hotel 1",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "number",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "description",
+									"value": "Primera habitacion del hotel 1",
+									"type": "default"
+								},
+								{
+									"key": "type",
+									"value": "single",
+									"type": "default"
+								},
+								{
+									"key": "price",
+									"value": "1500",
+									"type": "default"
+								},
+								{
+									"key": "hotel",
+									"value": "645340460684bca44c1ede45",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/api/create-room",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"create-room"
+							]
+						},
+						"description": "Cambiar el ID del hotel "
+					},
+					"response": []
+				},
+				{
+					"name": "Crear habitacion 2 para el hotel 1",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "number",
+									"value": "2",
+									"type": "default"
+								},
+								{
+									"key": "description",
+									"value": "Segunda habitacion del hotel 1",
+									"type": "default"
+								},
+								{
+									"key": "type",
+									"value": "double",
+									"type": "default"
+								},
+								{
+									"key": "price",
+									"value": "2500",
+									"type": "default"
+								},
+								{
+									"key": "hotel",
+									"value": "645340460684bca44c1ede45",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/api/create-room",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"create-room"
+							]
+						},
+						"description": "Cambiar el ID del hotel "
+					},
+					"response": []
+				},
+				{
+					"name": "Crear habitacion 1 para el hotel 3",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "number",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "description",
+									"value": "Primera habitacion del hotel 3",
+									"type": "default"
+								},
+								{
+									"key": "type",
+									"value": "single",
+									"type": "default"
+								},
+								{
+									"key": "price",
+									"value": "1500",
+									"type": "default"
+								},
+								{
+									"key": "hotel",
+									"value": "64534a97244f9ea75148f564",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/api/create-room",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"create-room"
+							]
+						},
+						"description": "Cambiar el ID del hotel "
+					},
+					"response": []
+				},
+				{
+					"name": "Ver todas las habitaciones de todos los hoteles",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/read-rooms",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"read-rooms"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Editar habitacion 1 del hotel 3",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "number",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "description",
+									"value": "Edit de la primera habitacion del hotel 3",
+									"type": "default"
+								},
+								{
+									"key": "type",
+									"value": "single",
+									"type": "default"
+								},
+								{
+									"key": "price",
+									"value": "1000",
+									"type": "default"
+								},
+								{
+									"key": "hotel",
+									"value": "64534a97244f9ea75148f564",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/api/edit-room/64534d1561e3d7dc8ca007ec",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"edit-room",
+								"64534d1561e3d7dc8ca007ec"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar la habitacion 2 del hotel 1",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/delete-room/64534ce661e3d7dc8ca007e1",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"delete-room",
+								"64534ce661e3d7dc8ca007e1"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "Cambiar los ID de los hoteles a los que se hacen referencia. Cada vez que se corra esta coleccion de peticioines se generaran diferentes ID para los hoteles por lo cual es necesario cambiar los ID de los hoteles a los que haremos referencia en algunas peticiones."
+		},
+		{
+			"name": "Event",
+			"item": [
+				{
+					"name": "Crear nuevo evento",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Fiesta de inaguracion",
+									"type": "default"
+								},
+								{
+									"key": "description",
+									"value": "Fiesta que se celebrara en el hotel  1 por su apertura.",
+									"type": "default"
+								},
+								{
+									"key": "type",
+									"value": "Fiesta",
+									"type": "default"
+								},
+								{
+									"key": "date",
+									"value": "2023-05-04",
+									"type": "default"
+								},
+								{
+									"key": "hotel",
+									"value": "645340460684bca44c1ede45",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/api/create-event",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"create-event"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear nuevo evento, hotel 3",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Fiesta de inaguracion",
+									"type": "default"
+								},
+								{
+									"key": "description",
+									"value": "Fiesta que se celebrara en el hotel  1 por su apertura.",
+									"type": "default"
+								},
+								{
+									"key": "type",
+									"value": "Fiesta",
+									"type": "default"
+								},
+								{
+									"key": "date",
+									"value": "2023-05-04",
+									"type": "default"
+								},
+								{
+									"key": "hotel",
+									"value": "645340460684bca44c1ede45",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/api/create-event",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"create-event"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Ver eventos de un hotel en especifico",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "id",
+									"value": "645340460684bca44c1ede45",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/api/read-events-for-hotel",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"read-events-for-hotel"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Editar evento del hotel 3",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "id",
+									"value": "64547aed7a81d985dd55f69a",
+									"type": "default"
+								},
+								{
+									"key": "name",
+									"value": "Edit de fiesta de inaguracion",
+									"type": "default"
+								},
+								{
+									"key": "description",
+									"value": "Usando la ruta para editar un evento",
+									"type": "default"
+								},
+								{
+									"key": "type",
+									"value": "Fiesta",
+									"type": "default"
+								},
+								{
+									"key": "date",
+									"value": "2023-05-07",
+									"type": "default"
+								},
+								{
+									"key": "hotel",
+									"value": "64534a97244f9ea75148f564",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/api/update-event",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"update-event"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar el evento del hotel 3",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "id",
+									"value": "64547aed7a81d985dd55f69a",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/api/delete-event",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"delete-event"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Servicios",
+			"item": [
+				{
+					"name": "Crear primer servicio para hotel 1",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1SWQiOiI2NDUzM2RkODA2ODRiY2E0NGMxZWRlM2EiLCJ1c2VybmFtZSI6IlVzdWFyaW8gMSIsImVtYWlsIjoidXN1YXJpbzFAIiwiaWF0IjoxNjgzMjU4Nzk2LCJleHAiOjE2ODMyNjIzOTZ9.KpFBcRwwCpyV-38xaRldnD4ynUtWqHL9nbKl6kB0yXA",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Limpieza de habitacion",
+									"type": "default"
+								},
+								{
+									"key": "description",
+									"value": "Limpieza completa de la habitacion, se realizara por la mañana.",
+									"type": "default"
+								},
+								{
+									"key": "price",
+									"value": "65",
+									"type": "default"
+								},
+								{
+									"key": "hotel",
+									"value": "645340460684bca44c1ede45",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/api/create-service",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"create-service"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear segundo servicio para hotel 1 Copy",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1SWQiOiI2NDUzM2RkODA2ODRiY2E0NGMxZWRlM2EiLCJ1c2VybmFtZSI6IlVzdWFyaW8gMSIsImVtYWlsIjoidXN1YXJpbzFAIiwiaWF0IjoxNjgzMjU4Nzk2LCJleHAiOjE2ODMyNjIzOTZ9.KpFBcRwwCpyV-38xaRldnD4ynUtWqHL9nbKl6kB0yXA",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Entrega de la correspondencia a la habitación.",
+									"type": "default"
+								},
+								{
+									"key": "description",
+									"value": "Se hara entrega de la correspondencia directamente a la habitacion del cliente.",
+									"type": "default"
+								},
+								{
+									"key": "price",
+									"value": "55",
+									"type": "default"
+								},
+								{
+									"key": "hotel",
+									"value": "645340460684bca44c1ede45",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/api/create-service",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"create-service"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar servicios por cada hotel",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "idHotel",
+									"value": "645340460684bca44c1ede45",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/api/read-services",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"read-services"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar servicio",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1SWQiOiI2NDUzM2RkODA2ODRiY2E0NGMxZWRlM2EiLCJ1c2VybmFtZSI6IlVzdWFyaW8gMSIsImVtYWlsIjoidXN1YXJpbzFAIiwiaWF0IjoxNjgzMjYwODcxLCJleHAiOjE2ODMyNjQ0NzF9.REd6Hg6KEf00S1sc_lc_R7658O8RQvlc8VvARTWMA10",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "idService",
+									"value": "645485369776f58d15e712f9",
+									"type": "default"
+								},
+								{
+									"key": "name",
+									"value": "Ya no se entrega la correspondencia",
+									"type": "default"
+								},
+								{
+									"key": "description",
+									"value": "Ya no se entregara la correspondencia directamente a la habitacion del cliente",
+									"type": "default"
+								},
+								{
+									"key": "price",
+									"value": "15",
+									"type": "default"
+								},
+								{
+									"key": "hotel",
+									"value": "645340460684bca44c1ede45",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/api/update-service",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"update-service"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar servicio",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1SWQiOiI2NDUzM2RkODA2ODRiY2E0NGMxZWRlM2EiLCJ1c2VybmFtZSI6IlVzdWFyaW8gMSIsImVtYWlsIjoidXN1YXJpbzFAIiwiaWF0IjoxNjgzMjYwODcxLCJleHAiOjE2ODMyNjQ0NzF9.REd6Hg6KEf00S1sc_lc_R7658O8RQvlc8VvARTWMA10",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "idService",
+									"value": "645485369776f58d15e712f9",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/api/delete-service",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"delete-service"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "Para estas rutas es necesario revisar el jwt, pues estas rutas tienen una quemada, es necesario cambiarlo volviendo a iniciar sesion como usuario1. \nAl igual que los ID de los hoteles, se debe verificar que sean los correctos llendoa  revisar en la base de datos."
+		},
+		{
+			"name": "Reservaciones",
+			"item": [
+				{
+					"name": "Crear reservacion",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1SWQiOiI2NDUzM2RkODA2ODRiY2E0NGMxZWRlM2EiLCJ1c2VybmFtZSI6IlVzdWFyaW8gMSIsImVtYWlsIjoidXN1YXJpbzFAIiwiaWF0IjoxNjgzMjYxNTA0LCJleHAiOjE2ODMyNjUxMDR9.DbrFh7h_SLC3z9V_w-6_EfwTxUgeun0MU7Kbl4KINUc",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "room",
+									"value": "64534c58244f9ea75148f569",
+									"description": "ID de la habitacion que queremos reservar",
+									"type": "default"
+								},
+								{
+									"key": "checkIn",
+									"value": "2023-05-10",
+									"type": "default"
+								},
+								{
+									"key": "checkOut",
+									"value": "2023-05-15",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/api/create-reservation",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"create-reservation"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear reservacion 2",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1SWQiOiI2NDUzM2RkODA2ODRiY2E0NGMxZWRlM2EiLCJ1c2VybmFtZSI6IlVzdWFyaW8gMSIsImVtYWlsIjoidXN1YXJpbzFAIiwiaWF0IjoxNjgzMjYxNTA0LCJleHAiOjE2ODMyNjUxMDR9.DbrFh7h_SLC3z9V_w-6_EfwTxUgeun0MU7Kbl4KINUc",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "room",
+									"value": "64534d1561e3d7dc8ca007ec",
+									"description": "ID de la habitacion que queremos reservar",
+									"type": "default"
+								},
+								{
+									"key": "checkIn",
+									"value": "2023-05-10",
+									"type": "default"
+								},
+								{
+									"key": "checkOut",
+									"value": "2023-05-15",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/api/create-reservation",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"create-reservation"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Ver las reservaciones del usuario logueado",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1SWQiOiI2NDUzM2RkODA2ODRiY2E0NGMxZWRlM2EiLCJ1c2VybmFtZSI6IlVzdWFyaW8gMSIsImVtYWlsIjoidXN1YXJpbzFAIiwiaWF0IjoxNjgzMjY1MDI0LCJleHAiOjE2ODMyNjg2MjR9.fX_gHAciOG-46xwI5qkJEQQ8AEcoCnjzBqKC5Z7NIv8",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "localhost:3000/api/read-user-reservations",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"read-user-reservations"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Editar reservacion",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1SWQiOiI2NDUzM2RkODA2ODRiY2E0NGMxZWRlM2EiLCJ1c2VybmFtZSI6IlVzdWFyaW8gMSIsImVtYWlsIjoidXN1YXJpbzFAIiwiaWF0IjoxNjgzMjY1NzQzLCJleHAiOjE2ODMyNjkzNDN9.goYX2OubTkZZez4cqnL7uAHvF1-pZgOmsB2UfRfEA8k",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "idReservation",
+									"value": "6454963765ed5ea7a56815f0",
+									"type": "default"
+								},
+								{
+									"key": "room",
+									"value": "64534d1561e3d7dc8ca007ec",
+									"type": "default"
+								},
+								{
+									"key": "checkIn",
+									"value": "2023-05-10",
+									"type": "default"
+								},
+								{
+									"key": "checkOut",
+									"value": "2023-05-12",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/api/update-reservation",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"update-reservation"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar reservacion",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1SWQiOiI2NDUzM2RkODA2ODRiY2E0NGMxZWRlM2EiLCJ1c2VybmFtZSI6IlVzdWFyaW8gMSIsImVtYWlsIjoidXN1YXJpbzFAIiwiaWF0IjoxNjgzMjY2Nzc4LCJleHAiOjE2ODMyNzAzNzh9.ljU4bl9dU3rVisULzrlNmJCeW-4-xjsyaq3L9LjC3qk",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "idReservation",
+									"value": "6454963765ed5ea7a56815f0",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/api/delete-reservation",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"delete-reservation"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
